@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Github, Globe } from "lucide-react";
+import { LuGithub, LuGlobe } from "react-icons/lu";
 import Anchor from "./Anchor";
 import Tag from "./Tag";
 
@@ -26,12 +26,12 @@ const Project = ({ img, title, description, gitHubLink, deployLink, tags }) => {
       </div>
       <div className="flex gap-4">
         {deployLink !== undefined && deployLink !== "" ? (
-          <Anchor LucideIcon={Globe} href={deployLink} />
+          <Anchor Icon={LuGlobe} href={deployLink} />
         ) : (
           ""
         )}
         {gitHubLink !== undefined && gitHubLink !== "" ? (
-          <Anchor LucideIcon={Github} href={gitHubLink} />
+          <Anchor Icon={LuGithub} href={gitHubLink} />
         ) : (
           ""
         )}

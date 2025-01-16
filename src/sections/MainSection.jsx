@@ -1,5 +1,6 @@
 import Stat from "../components/Stat";
-import { Layers, PanelsTopLeft, ArrowRight } from "lucide-react";
+import { LuLayers3, LuCodeXml  , LuArrowRight   } from "react-icons/lu";
+
 
 const MainSection = () => {
   return (
@@ -23,7 +24,7 @@ const MainSection = () => {
         <div
           className="py-8 px-5 flex flex-col gap-6 w-72 bg-gradient-to-br from-orange-600 to-rose-600 rounded-xl text-white"
         >
-          <Layers size={36} />
+          <LuLayers3 size={36} />
           <div className="flex flex-col gap-4">
             <h3 className="uppercase font-semibold text-2xl">
               Web Development & Data Analysis
@@ -32,7 +33,7 @@ const MainSection = () => {
               className={`w-min border rounded-lg p-1 self-end hover:bg-white hover:text-rose-600 transition-all hover:cursor-pointer`}
             >
               <a href={"#"}>
-                <ArrowRight size={24} />
+                <LuArrowRight  size={24} />
               </a>
             </div>
           </div>
@@ -42,7 +43,7 @@ const MainSection = () => {
         <div
           className="py-8 px-5 flex flex-col gap-6 w-96 bg-gradient-to-br from-lime-500 to-teal-500  rounded-xl text-neutral-900"
         >
-          <PanelsTopLeft size={36} />
+          <LuCodeXml   size={36} />
           <div className="flex flex-col gap-4">
             <h3 className="uppercase font-semibold text-2xl">
               React, TypeScript, Tableau, MongoDB, SQL
@@ -51,7 +52,7 @@ const MainSection = () => {
               className={`w-min border border-neutral-900 rounded-lg p-1 self-end hover:bg-neutral-900 hover:text-teal-500 transition-all hover:cursor-pointer`}
             >
               <a href={"#"}>
-                <ArrowRight size={24} />
+                <LuArrowRight size={24} />
               </a>
             </div>
           </div>
