@@ -1,4 +1,4 @@
-import { LuLinkedin, LuGithub, LuMail } from "react-icons/lu";
+import { LuLinkedin, LuGithub, LuMail, LuDownload } from "react-icons/lu";
 
 const PresentationCard = () => {
   return (
@@ -12,6 +12,12 @@ const PresentationCard = () => {
       </div>
       <div className="flex flex-col h-3/5 justify-between mt-5 text-center">
         <h1 className="font-bold text-3xl">Juan Mayorquín</h1>
+        <a className="w-min m-auto" href="#">
+          <div className="flex items-center justify-center gap-4 bg-orange-600 p-4 rounded-xl text-white font-semibold">
+            <LuDownload size={28} strokeWidth={2.5}/>
+            <p className="w-[12ch]">Descargar CV</p>
+          </div>
+        </a>
         <div className="flex flex-col items-center gap-6">
           <p className="text-neutral-500 font-medium text-lg leading-5">
             A Multimedia Engineer who has developed countless innovative
