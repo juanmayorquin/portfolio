@@ -1,4 +1,4 @@
-import Project from "./Project";
+import Project from "../components/Project";
 
 const RecentProjectsSection = () => {
   const projects = [
@@ -18,6 +18,14 @@ const RecentProjectsSection = () => {
       gitHubLink: "#",
       tags: ["HTML", "CSS", "TypeScript", "Preact"],
     },
+    {
+      img: "/src/assets/projectsImg/screenshot.png",
+      title: "A Random Project ",
+      description: "Another short and clear project description",
+      deployLink: "#",
+      gitHubLink: "#",
+      tags: ["HTML", "CSS", "TypeScript", "Preact"],
+    },
   ];
   return (
     <section id="projects" className="flex flex-col gap-10">
@@ -25,7 +33,7 @@ const RecentProjectsSection = () => {
         Recent
         <span className="text-neutral-700 inline-block">Projects</span>
       </h2>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-4">
         {projects.map((project, index) => (
           <Project key={index} {...project} />
         ))}
