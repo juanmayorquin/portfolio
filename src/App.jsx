@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import PresentationCard from "./components/PresentationCard";
 import RecentProjects from "./sections/RecentProjectsSection";
 import SkillsSection from "./sections/SkillsSection";
+import ContactForm from "./sections/ContactForm";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
               <RecentProjects />
               <SkillsSection />
               <EducationSection />
+              <ContactForm />
+              <Footer />
             </div>
           </div>
         </div>

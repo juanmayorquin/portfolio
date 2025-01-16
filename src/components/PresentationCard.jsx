@@ -13,9 +13,9 @@ const PresentationCard = () => {
       <div className="flex flex-col h-3/5 justify-between mt-5 text-center">
         <h1 className="font-bold text-3xl">Juan Mayorquín</h1>
         <a className="w-min m-auto" href="#">
-          <div className="flex items-center justify-center gap-4 bg-orange-600 p-4 rounded-xl text-white font-semibold">
+          <div className="flex items-center justify-center gap-4 bg-orange-600 p-4 rounded-xl hover:text-neutral-800 transition-all text-white font-semibold">
             <LuDownload size={28} strokeWidth={2.5}/>
-            <p className="w-[12ch]">Descargar CV</p>
+            <p className="w-36">Download CV</p>
           </div>
         </a>
         <div className="flex flex-col items-center gap-6">
