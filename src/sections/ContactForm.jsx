@@ -5,12 +5,12 @@ const ContactForm = () => {
   const labelStyle =
     "text-neutral-300 group-hover:text-white group-hover:font-medium transition-all w-full text-sm";
   const inputStyle =
-    "placeholder:text-neutral-400 p-3 outline-none w-full h-full text-[0.9rem] border border-neutral-500 focus:border-orange-600 leading-5 bg-neutral-700 rounded-lg appearance-none transition-all";
+    "placeholder:text-neutral-400 p-3 outline-none w-full h-full text-[0.9rem] border border-neutral-500 focus:border-orange-600 leading-5 bg-neutral-800 rounded-lg appearance-none transition-all";
 
   const [selectedValue, setSelectedValue] = useState("");
 
   return (
-    <section id="education" className="flex flex-col gap-10">
+    <section id="contact" className="flex flex-col gap-10">
       <h2 className="uppercase text-white font-bold text-8xl inline-block">
         Let's work
         <span className="text-neutral-700 inline-block">Together</span>
@@ -73,14 +73,14 @@ const ContactForm = () => {
             Message
           </label>
           <textarea
-            className={`${inputStyle} h-72`}
+            className={`${inputStyle} h-52`}
             placeholder="Your message"
             name="message"
             id="contact-message"
           ></textarea>
         </div>
         <button
-          className="w-full col-span-2 bg-orange-600 p-3 rounded-xl font-semibold flex items-center justify-center text-lg hover:text-neutral-800"
+          className="w-full col-span-2 bg-orange-600 p-3 rounded-xl font-semibold flex items-center justify-center text-lg hover:text-neutral-800 transition-all"
           type="submit"
         >
           Submit

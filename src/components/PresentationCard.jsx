@@ -2,7 +2,7 @@ import { LuLinkedin, LuGithub, LuMail, LuDownload } from "react-icons/lu";
 
 const PresentationCard = () => {
   return (
-    <div className="bg-white w-full p-8 px-12 h-[640px] flex flex-col items-center sticky rounded-2xl justify-between">
+    <div className="bg-white w-full p-8 px-12 h-[640px] flex flex-col items-center rounded-2xl justify-between">
       <div className="bg-gradient-to-tr from-orange-500 to-red-600 rounded-xl p-3 pt-6 pb-0">
         <img
           className="w-full h-full"
@@ -14,7 +14,7 @@ const PresentationCard = () => {
         <h1 className="font-bold text-3xl">Juan Mayorquín</h1>
         <a className="w-min m-auto" href="#">
           <div className="flex items-center justify-center gap-4 bg-orange-600 p-4 rounded-xl hover:text-neutral-800 transition-all text-white font-semibold">
-            <LuDownload size={28} strokeWidth={2.5}/>
+            <LuDownload size={26} strokeWidth={2.5}/>
             <p className="w-36">Download CV</p>
           </div>
         </a>
@@ -24,17 +24,17 @@ const PresentationCard = () => {
             solutions.
           </p>
           <div className="flex text-orange-600 justify-between w-2/3">
-            <a href="#">
+            <a href="https://www.linkedin.com/in/juan-jos%C3%A9-mayorqu%C3%ADn-cabrera-09920b275/">
               <div className="hover:bg-black/5 hover:text-red-500 p-3 rounded-xl transition-all">
                 <LuLinkedin size={24} />
               </div>
             </a>
-            <a href="#">
+            <a href="https://github.com/juanmayorquin">
               <div className="hover:bg-black/5 hover:text-red-500 p-3 rounded-xl transition-all">
                 <LuGithub size={24} />
               </div>
             </a>
-            <a href="#">
+            <a href="mailto:juanjosemayorquincabrera@gmail.com">
               <div className="hover:bg-black/5 hover:text-red-500 p-3 rounded-xl transition-all">
                 <LuMail size={24} />
               </div>

@@ -24,7 +24,7 @@ const RecentProjectsSection = () => {
       description: "Another short and clear project description",
       deployLink: "#",
       gitHubLink: "#",
-      tags: ["HTML", "CSS", "TypeScript", "Preact"],
+      tags: ["HTML", "CSS", "TypeScript"],
     },
   ];
   return (

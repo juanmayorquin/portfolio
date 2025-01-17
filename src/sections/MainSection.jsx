@@ -32,7 +32,7 @@ const MainSection = () => {
             <div
               className={`w-min border rounded-lg p-1 self-end hover:bg-white hover:text-rose-600 transition-all hover:cursor-pointer`}
             >
-              <a href={"#"}>
+              <a href={"#projects"}>
                 <LuArrowRight  size={24} />
               </a>
             </div>
@@ -51,7 +51,7 @@ const MainSection = () => {
             <div
               className={`w-min border border-neutral-900 rounded-lg p-1 self-end hover:bg-neutral-900 hover:text-teal-500 transition-all hover:cursor-pointer`}
             >
-              <a href={"#"}>
+              <a href={"#skills"}>
                 <LuArrowRight size={24} />
               </a>
             </div>

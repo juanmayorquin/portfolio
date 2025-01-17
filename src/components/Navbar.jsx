@@ -1,29 +1,15 @@
-import { LuHouse, LuFolder, LuBook, LuWrench } from "react-icons/lu";
+import { LuHouse, LuFolder, LuBook, LuWrench, LuUser } from "react-icons/lu";
+import NavbarItem from "./NavbarItem";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-min p-6 grid place-items-center text-white">
-      <nav className="flex justify-between w-72 px-8 py-3 bg-white/[0.03] rounded-xl">
-        <div className="hover:scale-110 transition-all">
-          <a href="/">
-            <LuHouse size={22} />
-          </a>
-        </div>
-        <div className="hover:scale-110 transition-all">
-          <a href="#projects">
-            <LuFolder size={22} />
-          </a>
-        </div>
-        <div className="hover:scale-110 transition-all">
-          <a href="#education">
-            <LuBook size={22} />
-          </a>
-        </div>
-        <div className="hover:scale-110 transition-all">
-          <a href="#">
-            <LuWrench size={22} />
-          </a>
-        </div>
+    <div className="p-6 grid place-items-center text-white">
+      <nav className="flex justify-between gap w-80 px-8 py-4 bg-white/[0.03] rounded-xl">
+        <NavbarItem Icon={LuHouse} href={"/"} label={"Home"}/>
+        <NavbarItem Icon={LuFolder} href={"#projects"} label={"Projects"}/>
+        <NavbarItem Icon={LuWrench} href={"#skills"} label={"Skills"}/>
+        <NavbarItem Icon={LuBook} href={"#education"} label={"Education"}/>
+        <NavbarItem Icon={LuUser} href={"#contact"} label={"Contact"}/>
       </nav>
     </div>
   );
