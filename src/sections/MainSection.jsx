@@ -1,10 +1,16 @@
 import Stat from "../components/Stat";
-import { LuLayers3, LuCodeXml  , LuArrowRight   } from "react-icons/lu";
-
+import { LuLayers3, LuCodeXml, LuArrowRight } from "react-icons/lu";
+import { motion } from "motion/react";
 
 const MainSection = () => {
   return (
-    <section className="flex flex-col gap-20">
+    <motion.section
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5, delay: 0.3 }}
+      viewport={{once: true}}
+      className="flex flex-col gap-20"
+    >
       <div className="flex flex-col gap-3">
         <h2 className="font-bold text-8xl uppercase">
           <span className="inline-block text-white">Multimedia</span>
@@ -21,9 +27,7 @@ const MainSection = () => {
       </div>
       <div className="flex gap-8 group">
         {/* Card 1 */}
-        <div
-          className="py-8 px-5 flex flex-col gap-6 w-72 bg-gradient-to-br from-orange-600 to-rose-600 rounded-xl text-white"
-        >
+        <div className="py-8 px-5 flex flex-col gap-6 w-72 bg-gradient-to-br from-orange-600 to-rose-600 rounded-xl text-white">
           <LuLayers3 size={36} />
           <div className="flex flex-col gap-4">
             <h3 className="uppercase font-semibold text-2xl">
@@ -33,17 +37,15 @@ const MainSection = () => {
               className={`w-min border rounded-lg p-1 self-end hover:bg-white hover:text-rose-600 transition-all hover:cursor-pointer`}
             >
               <a href={"#projects"}>
-                <LuArrowRight  size={24} />
+                <LuArrowRight size={24} />
               </a>
             </div>
           </div>
         </div>
 
         {/* Card 2 */}
-        <div
-          className="py-8 px-5 flex flex-col gap-6 w-96 bg-gradient-to-br from-lime-500 to-teal-500  rounded-xl text-neutral-900"
-        >
-          <LuCodeXml   size={36} />
+        <div className="py-8 px-5 flex flex-col gap-6 w-96 bg-gradient-to-br from-lime-500 to-teal-500  rounded-xl text-neutral-900">
+          <LuCodeXml size={36} />
           <div className="flex flex-col gap-4">
             <h3 className="uppercase font-semibold text-2xl">
               React, TypeScript, Tableau, MongoDB, SQL
@@ -58,7 +60,7 @@ const MainSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

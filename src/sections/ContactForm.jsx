@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { motion } from "motion/react";
 
 /* eslint-disable react/no-unescaped-entities */
 const ContactForm = () => {
   const labelStyle =
     "text-neutral-300 group-hover:text-white group-hover:font-medium transition-all w-full text-sm";
   const inputStyle =
-    "placeholder:text-neutral-400 p-3 outline-none w-full h-full text-[0.9rem] border border-neutral-500 focus:border-orange-600 leading-5 bg-neutral-800 rounded-lg appearance-none transition-all";
+    "placeholder:text-neutral-400 p-3 outline-none w-full h-full text-[0.9rem] border border-neutral-500 focus:border-orange-600 leading-5 bg-white/10 rounded-lg appearance-none transition-all";
 
   const [selectedValue, setSelectedValue] = useState("");
 
@@ -15,7 +16,15 @@ const ContactForm = () => {
         Let's work
         <span className="text-neutral-700 inline-block">Together</span>
       </h2>
-      <form className="grid grid-cols-2 gap-4 text-white" action="">
+      <motion.form
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.3 }}
+        viewport={{ once: true }}
+        animate
+        className="grid grid-cols-2 gap-4 text-white"
+        action=""
+      >
         <div className="flex flex-col gap-4 group">
           <label className={labelStyle} htmlFor="contact-name">
             Name
@@ -85,7 +94,7 @@ const ContactForm = () => {
         >
           Submit
         </button>
-      </form>
+      </motion.form>
     </section>
   );
 };

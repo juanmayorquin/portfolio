@@ -1,8 +1,15 @@
 import { LuLinkedin, LuGithub, LuMail, LuDownload } from "react-icons/lu";
+import { motion } from "motion/react";
 
 const PresentationCard = () => {
   return (
-    <div className="bg-white w-full p-8 px-12 h-[640px] flex flex-col items-center rounded-2xl justify-between">
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5, delay: 0.3 }}
+      viewport={{ once: true }}
+      className="bg-white w-full p-8 px-12 h-[640px] flex flex-col items-center rounded-2xl justify-between"
+    >
       <div className="bg-gradient-to-tr from-orange-500 to-red-600 rounded-xl p-3 pt-6 pb-0">
         <img
           className="w-full h-full"
@@ -14,7 +21,7 @@ const PresentationCard = () => {
         <h1 className="font-bold text-3xl">Juan Mayorquín</h1>
         <a className="w-min m-auto" href="#">
           <div className="flex items-center justify-center gap-4 bg-orange-600 p-4 rounded-xl hover:text-neutral-800 transition-all text-white font-semibold">
-            <LuDownload size={26} strokeWidth={2.5}/>
+            <LuDownload size={26} strokeWidth={2.5} />
             <p className="w-36">Download CV</p>
           </div>
         </a>
@@ -24,12 +31,12 @@ const PresentationCard = () => {
             solutions.
           </p>
           <div className="flex text-orange-600 justify-between w-2/3">
-            <a href="https://www.linkedin.com/in/juan-jos%C3%A9-mayorqu%C3%ADn-cabrera-09920b275/">
+            <a target="_blank" href="https://www.linkedin.com/in/juan-jos%C3%A9-mayorqu%C3%ADn-cabrera-09920b275/">
               <div className="hover:bg-black/5 hover:text-red-500 p-3 rounded-xl transition-all">
                 <LuLinkedin size={24} />
               </div>
             </a>
-            <a href="https://github.com/juanmayorquin">
+            <a target="_blank" href="https://github.com/juanmayorquin">
               <div className="hover:bg-black/5 hover:text-red-500 p-3 rounded-xl transition-all">
                 <LuGithub size={24} />
               </div>
@@ -42,7 +49,7 @@ const PresentationCard = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

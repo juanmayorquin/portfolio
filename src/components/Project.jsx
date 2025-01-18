@@ -1,11 +1,19 @@
 /* eslint-disable react/prop-types */
 import { LuGithub, LuGlobe } from "react-icons/lu";
 import Anchor from "./Anchor";
+import { motion } from "motion/react";
 import Tag from "./Tag";
 
 const Project = ({ img, title, description, gitHubLink, deployLink, tags }) => {
   return (
-    <article className="flex items-center border-l-4 border-transparent hover:border-orange-600 justify-between rounded-l rounded-r-xl px-8 p-4 gap-5 hover:bg-white/5 hover:translate-x-2 transition-all">
+    <motion.article
+      initial={{ opacity: 0}}
+      whileInView={{ opacity: 1 }}
+      transition={{delay:0.1, duration:0.3,}}
+      viewport={{ once: true }}
+      animate
+      className="flex items-center border-l-4 border-transparent hover:border-orange-600 justify-between rounded-l rounded-r-xl px-8 p-4 gap-5 hover:bg-white/5 hover:translate-x-2 transition-all"
+    >
       <div className="flex gap-10 items-center">
         <img
           className="object-cover rounded-md h-32 w-32"
@@ -36,7 +44,7 @@ const Project = ({ img, title, description, gitHubLink, deployLink, tags }) => {
           ""
         )}
       </div>
-    </article>
+    </motion.article>
   );
 };
 

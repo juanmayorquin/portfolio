@@ -1,37 +1,47 @@
 import {
-  SiReact,
-  SiMongodb,
-  SiNodedotjs,
-  SiExpress,
+  SiPython,
+  SiUnity,
+  SiMysql,
+  SiPostgresql,
+  SiAdobecreativecloud,
   SiHtml5,
   SiCss3,
   SiJavascript,
   SiTypescript,
-  SiPostgresql,
-  SiMysql,
-  SiGit,
-  SiRedux,
+  SiReact,
   SiTailwindcss,
+  SiGit,
+  SiNodedotjs,
+  SiExpress,
   SiFirebase,
+  SiMongodb,
+  SiFigma,
+  SiBlender,
 } from "react-icons/si";
+
 import SkillCard from "../components/SkillCard";
+
 const SkillsSection = () => {
   const skills = [
     { Icon: SiHtml5, name: "HTML5", color: "#E34F26" },
     { Icon: SiCss3, name: "CSS3", color: "#1572B6" },
     { Icon: SiGit, name: "Git", color: "#F05032" },
     { Icon: SiJavascript, name: "JavaScript", color: "#F7DF1E" },
-    { Icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
+    { Icon: SiFigma, name: "Figma", color: "#a259ff" },
+    { Icon: SiAdobecreativecloud, name: "Adobe Suite", color: "#FF0000" },
     { Icon: SiTailwindcss, name: "TailwindCSS", color: "#06B6D4" },
+    { Icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
+    { Icon: SiPython, name: "Python", color: "#3776AB" },
     { Icon: SiReact, name: "React", color: "#61DAFB" },
-    { Icon: SiRedux, name: "Redux", color: "#764ABC" },
-    { Icon: SiNodedotjs, name: "Node.js", color: "#339933" },
-    { Icon: SiExpress, name: "Express.js", color: "#FFFFFF" },
     { Icon: SiFirebase, name: "Firebase", color: "#FFCA28" },
-    { Icon: SiMongodb, name: "MongoDB", color: "#47A248" },
-    { Icon: SiPostgresql, name: "PostgreSQL", color: "#336791" },
     { Icon: SiMysql, name: "MySQL", color: "#4479A1" },
-  ];  
+    { Icon: SiPostgresql, name: "PostgreSQL", color: "#336791" },
+    { Icon: SiNodedotjs, name: "Node.js", color: "#339933" },
+    { Icon: SiExpress, name: "Express.js", color: "#FFF" },
+    { Icon: SiMongodb, name: "MongoDB", color: "#47A248" },
+    { Icon: SiBlender, name: "Blender", color: "#F5792A" },
+    { Icon: SiUnity, name: "Unity", color: "#FFF" },
+  ];
 
   return (
     <section id="skills" className="flex flex-col gap-10">
