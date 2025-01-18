@@ -8,7 +8,7 @@ const MainSection = () => {
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
-      viewport={{once: true}}
+      viewport={{ once: true }}
       className="flex flex-col gap-20"
     >
       <div className="flex flex-col gap-3">

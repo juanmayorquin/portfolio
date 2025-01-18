@@ -6,7 +6,7 @@ const ContactForm = () => {
   const labelStyle =
     "text-neutral-300 group-hover:text-white group-hover:font-medium transition-all w-full text-sm";
   const inputStyle =
-    "placeholder:text-neutral-400 p-3 outline-none w-full h-full text-[0.9rem] border border-neutral-500 focus:border-orange-600 leading-5 bg-white/10 rounded-lg appearance-none transition-all";
+    "placeholder:text-neutral-400 p-3 outline-none w-full h-full text-[0.9rem] border border-neutral-500 focus:border-orange-600 leading-5 bg-neutral-900 rounded-lg appearance-none transition-all";
 
   const [selectedValue, setSelectedValue] = useState("");
 
