@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 const Navbar = () => {
   return (
-    <motion.div
+    <motion.header
       initial={{ y: -40, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.6 }}
@@ -19,7 +19,7 @@ const Navbar = () => {
         <NavbarItem Icon={LuBook} href={"#education"} label={"Education"} />
         <NavbarItem Icon={LuUser} href={"#contact"} label={"Contact"} />
       </nav>
-    </motion.div>
+    </motion.header>
   );
 };
 

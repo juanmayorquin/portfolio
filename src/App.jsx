@@ -3,7 +3,7 @@ import MainSection from "./sections/MainSection";
 import Navbar from "./components/Navbar";
 import PresentationCard from "./components/PresentationCard";
 import RecentProjects from "./sections/RecentProjectsSection";
-import SkillsSection from "./sections/SkillsSection";
+import HardSkillsSection from "./sections/HardSkillsSection";
 import ContactForm from "./sections/ContactForm";
 import Footer from "./components/Footer";
 
@@ -20,7 +20,7 @@ function App() {
             <div className="h-full w-2/3 flex flex-col gap-20">
               <MainSection />
               <RecentProjects />
-              <SkillsSection />
+              <HardSkillsSection />
               <EducationSection />
               <ContactForm />
               <Footer />
