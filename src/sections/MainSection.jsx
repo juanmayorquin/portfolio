@@ -31,9 +31,9 @@ const MainSection = () => {
         <div className="py-8 px-5 flex flex-col gap-6 w-full xl:w-72 bg-gradient-to-br from-orange-600 to-red-600 rounded-xl text-white">
           <LuLayers3 size={36} />
           <div className="flex flex-col gap-4">
-            <h3 className="uppercase font-semibold text-2xl">
+            <h4 className="uppercase font-semibold text-2xl">
               Web Development & Data Analysis
-            </h3>
+            </h4>
             <div
               className={`w-min border rounded-lg p-1 self-end hover:bg-white hover:text-rose-600 transition-all hover:cursor-pointer`}
             >
@@ -48,9 +48,9 @@ const MainSection = () => {
         <div className="py-8 px-5 flex flex-col gap-6 w-full xl:w-96 bg-gradient-to-br from-lime-500 to-teal-500  rounded-xl text-neutral-900">
           <LuCodeXml size={36} />
           <div className="flex flex-col gap-4">
-            <h3 className="uppercase font-semibold text-2xl">
-              React, TypeScript, Tableau, MongoDB, SQL
-            </h3>
+            <h4 className="uppercase font-semibold text-2xl">
+              JavaScript, React, Node.js, Python, Cloud
+            </h4>
             <div
               className={`w-min border border-neutral-900 rounded-lg p-1 self-end hover:bg-neutral-900 hover:text-teal-500 transition-all hover:cursor-pointer`}
             >

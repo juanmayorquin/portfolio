@@ -12,7 +12,7 @@ const TimelineItem = ({ title, school, initYear, finishYear, skills }) => {
       animate
       className="timeline-item flex items-center gap-5 group"
     >
-      <div className="timeline-item-dot h-4 w-4 md:h-5 md:w-5 rounded-full bg-neutral-900 border-4 border-orange-600 group-hover:border-neutral-100 z-10 group-hover:bg-orange-600 group-hover:scale-[1.33] group-hover:shadow-sm  shadow-orange-600 transition-all"></div>
+      <div className="timeline-item-dot aspect-square h-4 w-4 md:h-5 md:w-5 rounded-full bg-neutral-900 border-4 border-orange-600 group-hover:border-neutral-100 z-10 group-hover:bg-orange-600 group-hover:scale-[1.33] group-hover:shadow-sm  shadow-orange-600 transition-all"></div>
       <div className="timeline-item-content w-full flex flex-col gap-4 group-hover:bg-white/5 group-hover:translate-x-1 px-8 py-5 rounded-xl transition-all">
         <h3 className="text-white text-xl md:text-3xl font-semibold">{title}</h3>
         <p className="text-neutral-400 md:text-lg font-medium">{school}</p>
