@@ -194,7 +194,7 @@ const HardSkillsSection = () => {
   const sectionRef = useRef();
 
   return (
-    <Section id={"skills"} title1={"Technical Toolbox"}>
+    <Section id={"skills"} title={"Technical Toolbox"}>
       <div
         onMouseLeave={() => {
           setBackDropStyle((prevStyle) => ({ ...prevStyle, opacity: 0 }));
@@ -203,13 +203,13 @@ const HardSkillsSection = () => {
         className="flex flex-wrap gap-4 relative"
       >
         <div
-          className="absolute backdrop-blur rounded bg-white/5 transition-all ease-in-out"
+          className="hidden lg:block absolute backdrop-blur rounded bg-white/5 transition-all ease-in-out"
           style={backDropStyle}
         ></div>
         {skillsCategories.map((category) => (
           <button
             key={category}
-            className="z-10 min-w-20 opacity-100 font-medium text-lg aria-pressed:border-b-4 border-transparent rounded py-2 px-3 aria-pressed:bg-white/5 aria-pressed:border-orange-600 border-b-0 text-neutral-200 hover:text-white transition-all"
+            className="z-10 min-w-20 opacity-100 font-medium text-sm md:text-lg aria-pressed:border-b-4 border-transparent rounded py-2 px-3 aria-pressed:bg-white/5 aria-pressed:border-orange-600 border-b-0 text-neutral-200 hover:text-white transition-all"
             onClick={() => {
               setCategoryFilter(category);
             }}
@@ -220,7 +220,7 @@ const HardSkillsSection = () => {
           </button>
         ))}
       </div>
-      <div className="flex flex-wrap gap-4 mt-3">
+      <div className="flex flex-wrap justify-center items-center lg:justify-normal lg:items-start gap-4 mt-3">
         {categoryFilter !== "All"
           ? skills
               .filter((skill) => skill.categories.includes(categoryFilter))

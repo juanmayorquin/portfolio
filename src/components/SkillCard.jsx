@@ -9,12 +9,12 @@ const SkillCard = ({ Icon, name, color }) => {
       transition={{ delay: 0.1, duration: 0.3 }}
       viewport={{ once: true }}
       animate
-      className="flex w-56 gap-6 p-4 border-2 border-white/5 hover:border-current rounded-lg saturate-150 hover:cursor-default transition-all duration-200 group ease-in-out"
+      className="flex aspect-square md:aspect-auto w-36 md:w-56 p-4 gap-6 border-2 border-white/5 hover:border-current rounded-lg saturate-150 hover:cursor-default transition-all duration-200 group ease-in-out"
       style={{ color }}
     >
-      <div className="z-10 flex w-full gap-5 items-center">
+      <div className="flex flex-col md:flex-row w-full gap-5 justify-center items-center lg:justify-start">
         <Icon className="min-w-min" size={38} />
-        <p className="text-start text-neutral-200 group-hover:text-white font-medium transition-all">
+        <p className="text-start text-neutral-200 group-hover:text-white font-medium text-xs md:text-base transition-all">
           {name}
         </p>
       </div>

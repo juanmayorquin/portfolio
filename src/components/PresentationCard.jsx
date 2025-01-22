@@ -8,16 +8,16 @@ const PresentationCard = () => {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
       viewport={{ once: true }}
-      className="bg-white w-full p-8 px-12 h-[640px] flex flex-col items-center rounded-2xl justify-between"
+      className="bg-white w-full max-w-md m-auto lg:m-0 p-8 px-12 h-max flex flex-col items-center rounded-2xl justify-between"
     >
-      <div className="bg-gradient-to-tr from-orange-500 to-red-600 rounded-xl p-3 pt-6 pb-0">
+      <div className="aspect-square w-full bg-gradient-to-tr from-orange-500 to-red-600 rounded-xl p-3 pt-6 pb-0">
         <img
           className="w-full h-full"
           src="/Memoji.webp"
           alt="Memoji de Juan Mayorquín"
         />
       </div>
-      <div className="flex flex-col h-3/5 justify-between mt-5 text-center">
+      <div className="flex flex-col h-3/5 gap-6 justify-between mt-5 text-center">
         <h1 className="font-bold text-3xl">Juan Mayorquín</h1>
         <a className="w-min m-auto" href="#">
           <div className="flex items-center justify-center gap-4 bg-orange-600 p-4 rounded-xl hover:text-neutral-800 transition-all text-white font-semibold">

@@ -3,7 +3,7 @@ import Section from "../components/Section";
 const AboutMeSection = () => {
   return (
     <Section id={"about-me"} title={"My Story So Far"}>
-      <div className="text-neutral-200 text-pretty leading-7 flex flex-col gap-6">
+      <div className="text-neutral-200 text-pretty leading-7 text-sm md:text-base flex flex-col gap-6">
         <motion.p
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}

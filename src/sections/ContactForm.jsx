@@ -85,7 +85,7 @@ const ContactForm = () => {
           ></textarea>
         </div>
         <button
-          className="w-full col-span-2 bg-orange-600 p-3 rounded-xl font-semibold flex items-center justify-center text-lg hover:text-neutral-800 transition-all"
+          className="w-full mt-4 col-span-2 bg-orange-600 p-3 rounded-xl font-semibold flex items-center justify-center text-lg hover:text-neutral-800 transition-all"
           type="submit"
         >
           Submit

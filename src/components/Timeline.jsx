@@ -5,7 +5,7 @@ const Timeline = ({ events }) => {
   return (
     <div className="timeline relative flex flex-col gap-10">
       <div
-        className="w-1 h-full absolute left-2"
+        className="w-1 h-full absolute left-[0.33rem] md:left-2"
         style={{
           background:
             "linear-gradient(180deg, rgba(234, 88, 12, 0) 0%, rgba(234, 88, 12, 1) 10%, rgba(234, 88, 12, 1) 90%, rgba(234, 88, 12, 0) 100%)",

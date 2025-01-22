@@ -19,7 +19,7 @@ const Navbar = () => {
       animate
       className="p-6 grid place-items-center text-white"
     >
-      <nav className="flex justify-between gap w-80 px-8 py-4 bg-white/[0.03] rounded-xl">
+      <nav className="flex justify-between gap w-full lg:place-self-end xl:place-self-auto md:w-80 px-8 py-4 bg-white/[0.03] rounded-xl">
         <NavbarItem Icon={LuHouse} href={"/"} label={"Home"} />
         <NavbarItem Icon={LuFolder} href={"#projects"} label={"Projects"} />
         <NavbarItem Icon={LuWrench} href={"#skills"} label={"Skills"} />
