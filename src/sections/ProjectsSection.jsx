@@ -1,4 +1,5 @@
 import Project from "../components/Project";
+import Section from "../components/Section";
 
 const ProjectsSection = () => {
   const projects = [
@@ -28,17 +29,13 @@ const ProjectsSection = () => {
     },
   ];
   return (
-    <section id="projects" className="flex flex-col gap-10">
-      <h2 className="uppercase text-white font-bold text-8xl inline-block">
-        Recent
-        <span className="text-neutral-700 block">Projects</span>
-      </h2>
+    <Section id={"projects"} title1={"Recent"} title2={"Projects"}>
       <div className="flex flex-col gap-4">
         {projects.map((project, index) => (
           <Project key={index} {...project} />
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
 

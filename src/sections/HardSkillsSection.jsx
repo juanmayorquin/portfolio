@@ -26,6 +26,7 @@ import {
 
 import SkillCard from "../components/SkillCard";
 import { useRef, useState } from "react";
+import Section from "../components/Section";
 
 const HardSkillsSection = () => {
   const skills = [
@@ -168,7 +169,6 @@ const HardSkillsSection = () => {
       categories: ["Back-End", "Data Analysis"],
     },
   ];
-  
 
   let categories = [];
   skills.forEach((skill) => {
@@ -194,14 +194,10 @@ const HardSkillsSection = () => {
   const sectionRef = useRef();
 
   return (
-    <section id="skills" className="flex flex-col gap-10">
-      <h2 className="uppercase text-white font-bold text-8xl inline-block">
-        Technical
-        <span className="text-neutral-700 block">Toolbox</span>
-      </h2>
+    <Section id={"skills"} title1={"Technical"} title2={"Toolbox"}>
       <div
         onMouseLeave={() => {
-          setBackDropStyle((prevStyle)=>({...prevStyle, opacity: 0}));
+          setBackDropStyle((prevStyle) => ({ ...prevStyle, opacity: 0 }));
         }}
         ref={sectionRef}
         className="flex flex-wrap gap-4 relative"
@@ -231,7 +227,7 @@ const HardSkillsSection = () => {
               .map((skill) => <SkillCard {...skill} key={skill.name} />)
           : skills.map((skill) => <SkillCard {...skill} key={skill.name} />)}
       </div>
-    </section>
+    </Section>
   );
 };
 

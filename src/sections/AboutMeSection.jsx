@@ -1,15 +1,12 @@
 import { motion } from "motion/react";
+import Section from "../components/Section";
 const AboutMeSection = () => {
   return (
-    <section id="about-me" className="flex flex-col gap-10">
-      <h2 className="uppercase text-white font-bold text-8xl inline-block">
-        My Story
-        <span className="text-neutral-700 block">so Far</span>
-      </h2>
+    <Section id={"about-me"} title1={"My Story"} title2={"So Far"}>
       <div className="text-neutral-200 text-pretty leading-7 flex flex-col gap-6">
         <motion.p
-          initial={{ opacity: 0, x:-20 }}
-          whileInView={{ opacity: 1 , x:0}}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 0.3 }}
           viewport={{ once: true }}
           animate
@@ -32,8 +29,8 @@ const AboutMeSection = () => {
           significantly boosting production!
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, x:-20 }}
-          whileInView={{ opacity: 1 , x:0}}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 0.3 }}
           viewport={{ once: true }}
           animate
@@ -46,27 +43,25 @@ const AboutMeSection = () => {
           love how this has enriched not only my work but also my personal life.
           Outside of coding, I enjoy <span className="accent">reading</span>,{" "}
           <span className="accent">photography</span>, and I’m fascinated by the
-          world of <span className="accent">F1</span> (Lando Norris is my
-          idol!).
+          world of <span className="accent">F1</span> (Lando Norris is my idol!).
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, x:-20 }}
-          whileInView={{ opacity: 1 , x:0}}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 0.3 }}
           viewport={{ once: true }}
           animate
         >
-          Looking ahead, my goal is to continue growing professionally, perfect
-          my skills in <span className="accent">human relations</span>,{" "}
+          Looking ahead, my goal is to continue growing professionally, perfect my
+          skills in <span className="accent">human relations</span>,{" "}
           <span className="accent">project management</span>, and{" "}
           <span className="accent">cybersecurity</span>, and of course,{" "}
-          <span className="accent">lead teams</span>. I always strive to work
-          with the best attitude and do things the best way possible. In the
-          end, I believe that things well done{" "}
-          <span className="accent">look good</span>.
+          <span className="accent">lead teams</span>. I always strive to work with
+          the best attitude and do things the best way possible. In the end, I
+          believe that things well done <span className="accent">look good</span>.
         </motion.p>
       </div>
-    </section>
+    </Section>
   );
 };
 

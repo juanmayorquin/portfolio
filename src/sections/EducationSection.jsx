@@ -1,3 +1,4 @@
+import Section from "../components/Section";
 import Timeline from "../components/Timeline";
 
 const EducationSection = () => {
@@ -25,13 +26,9 @@ const EducationSection = () => {
     },
   ];
   return (
-    <section id="education" className="flex flex-col gap-10">
-      <h2 className="uppercase text-white font-bold text-8xl inline-block">
-        Learning
-        <span className="text-neutral-700 block">Path</span>
-      </h2>
+    <Section id={"education"} title1={"Learning"} title2={"Path"}>
       <Timeline events={courses} />
-    </section>
+    </Section>
   );
 };
 

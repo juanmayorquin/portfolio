@@ -16,10 +16,10 @@ function App() {
         <Navbar />
         <div className="w-full flex flex-none items-center justify-center mt-16">
           <div className="w-full max-w-6xl md:flex gap-20 relative">
-            <div className="h-full w-10/12 md:w-1/3 m-auto md:m-0 md:sticky md:top-1/2 md:-translate-y-1/2">
+            <aside className="h-full w-10/12 md:w-1/3 m-auto md:m-0 md:sticky md:top-1/2 md:-translate-y-1/2">
               <PresentationCard />
-            </div>
-            <div className="h-full w-2/3 flex flex-col gap-20">
+            </aside>
+            <main className="h-full w-2/3 flex flex-col gap-20">
               <MainSection />
               <ProjectsSection />
               <HardSkillsSection />
@@ -28,7 +28,7 @@ function App() {
               <AboutMeSection />
               <ContactForm />
               <Footer />
-            </div>
+            </main>
           </div>
         </div>
       </div>

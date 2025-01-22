@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
+import Section from "../components/Section";
 
-/* eslint-disable react/no-unescaped-entities */
 const ContactForm = () => {
   const labelStyle =
     "text-neutral-300 group-hover:text-white group-hover:font-medium transition-all w-full text-sm";
@@ -11,11 +11,7 @@ const ContactForm = () => {
   const [selectedValue, setSelectedValue] = useState("");
 
   return (
-    <section id="contact" className="flex flex-col gap-10">
-      <h2 className="uppercase text-white font-bold text-8xl inline-block">
-        Let's work
-        <span className="text-neutral-700 block">Together</span>
-      </h2>
+    <Section id={"contact"} title1={"Let's Work"} title2={"Together"}>
       <motion.form
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -95,7 +91,7 @@ const ContactForm = () => {
           Submit
         </button>
       </motion.form>
-    </section>
+    </Section>
   );
 };
 

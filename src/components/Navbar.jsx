@@ -1,13 +1,20 @@
-import { LuHouse, LuFolder, LuBook, LuWrench, LuUser, LuMail } from "react-icons/lu";
+import {
+  LuHouse,
+  LuFolder,
+  LuBook,
+  LuWrench,
+  LuUser,
+  LuMail,
+} from "react-icons/lu";
 import NavbarItem from "./NavbarItem";
 import { motion } from "motion/react";
 
 const Navbar = () => {
   return (
     <motion.header
-      initial={{ y: -40, opacity: 0 }}
+      initial={{ y: -30, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.6 }}
+      transition={{ duration: 0.4 }}
       viewport={{ once: true }}
       animate
       className="p-6 grid place-items-center text-white"
