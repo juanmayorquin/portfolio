@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 const PresentationCard = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 20 }}
+      initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
       viewport={{ once: true }}
@@ -21,14 +21,13 @@ const PresentationCard = () => {
         <h1 className="font-bold text-3xl">Juan Mayorquín</h1>
         <a className="w-min m-auto" href="#">
           <div className="flex items-center justify-center gap-4 bg-orange-600 p-4 rounded-xl hover:text-neutral-800 transition-all text-white font-semibold">
-            <LuDownload size={26} strokeWidth={2.5} />
+            <LuDownload size={24} strokeWidth={2.5} />
             <p className="w-36">Download CV</p>
           </div>
         </a>
         <div className="flex flex-col items-center gap-6">
           <p className="text-neutral-500 font-medium text-lg leading-5">
-            A Multimedia Engineer who has developed countless innovative
-            solutions.
+          Multimedia Engineer and Data Enthusiast, crafting dynamic digital solutions.
           </p>
           <div className="flex text-orange-600 justify-between w-2/3">
             <a target="_blank" href="https://www.linkedin.com/in/juan-jos%C3%A9-mayorqu%C3%ADn-cabrera-09920b275/">

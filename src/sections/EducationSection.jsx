@@ -28,7 +28,7 @@ const EducationSection = () => {
     <section id="education" className="flex flex-col gap-10">
       <h2 className="uppercase text-white font-bold text-8xl inline-block">
         Learning
-        <span className="text-neutral-700 inline-block">Path</span>
+        <span className="text-neutral-700 block">Path</span>
       </h2>
       <Timeline events={courses} />
     </section>

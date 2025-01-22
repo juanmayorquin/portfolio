@@ -32,127 +32,143 @@ const HardSkillsSection = () => {
     {
       Icon: SiHtml5,
       name: "HTML5",
-      color: "#E34F26",
+      color: "#FF5722", // Más vibrante
       categories: ["Front-End"],
     },
-    { Icon: SiCss3, name: "CSS3", color: "#1572B6", categories: ["Front-End"] },
+    {
+      Icon: SiCss3,
+      name: "CSS3",
+      color: "#2196F3", // Más brillante
+      categories: ["Front-End"],
+    },
     {
       Icon: SiGit,
       name: "Git",
-      color: "#F05032",
+      color: "#FF4C2E", // Naranja más intenso
       categories: ["Back-End", "Front-End"],
     },
     {
       Icon: SiJavascript,
       name: "JavaScript",
-      color: "#F7DF1E",
+      color: "#FFD600", // Amarillo vibrante
       categories: ["Front-End"],
     },
-    { Icon: SiFigma, name: "Figma", color: "#A259FF", categories: ["Design"] },
+    {
+      Icon: SiFigma,
+      name: "Figma",
+      color: "#B620FF", // Morado más saturado
+      categories: ["Design"],
+    },
     {
       Icon: SiAdobephotoshop,
       name: "Photoshop",
-      color: "#31A8FF",
+      color: "#1E90FF", // Azul real más vibrante
       categories: ["Design"],
     },
     {
       Icon: SiAdobeillustrator,
       name: "Illustrator",
-      color: "#FF9A00",
+      color: "#FF6F00", // Naranja saturado
       categories: ["Design"],
     },
     {
       Icon: SiAdobepremierepro,
       name: "Premiere",
-      color: "#9999FF",
+      color: "#735DFF", // Azul violáceo saturado
       categories: ["Design"],
     },
     {
       Icon: SiAdobeaftereffects,
       name: "After Effects",
-      color: "#bd65f7",
+      color: "#AB47FF", // Morado vibrante
       categories: ["Design"],
     },
     {
       Icon: SiTailwindcss,
       name: "TailwindCSS",
-      color: "#06B6D4",
+      color: "#00E5FF", // Cian brillante
       categories: ["Front-End"],
     },
     {
       Icon: SiTypescript,
       name: "TypeScript",
-      color: "#3178C6",
+      color: "#005FCC", // Azul oscuro saturado
       categories: ["Front-End"],
     },
     {
       Icon: SiPython,
       name: "Python",
-      color: "#3776AB",
+      color: "#4586D6", // Azul más vivo
       categories: ["Back-End", "Data Analysis"],
     },
     {
       Icon: SiReact,
       name: "React",
-      color: "#61DAFB",
+      color: "#33DDFF", // Cian brillante
       categories: ["Front-End"],
     },
     {
       Icon: SiFirebase,
       name: "Firebase",
-      color: "#FFCA28",
+      color: "#FFB300", // Amarillo neón
       categories: ["Back-End"],
     },
     {
       Icon: SiMysql,
       name: "MySQL",
-      color: "#4479A1",
+      color: "#0069C0", // Azul fuerte
       categories: ["Back-End"],
     },
     {
       Icon: SiPostgresql,
       name: "PostgreSQL",
-      color: "#336791",
+      color: "#004495", // Azul oscuro más vibrante
       categories: ["Back-End"],
     },
     {
       Icon: SiNodedotjs,
       name: "Node.js",
-      color: "#339933",
+      color: "#3DCC3D", // Verde saturado
       categories: ["Back-End"],
     },
     {
       Icon: SiExpress,
       name: "Express.js",
-      color: "#FFFFFF",
+      color: "#E0E0E0", // Gris claro brillante
       categories: ["Back-End"],
     },
     {
       Icon: SiMongodb,
       name: "MongoDB",
-      color: "#47A248",
+      color: "#4CAF50", // Verde más intenso
       categories: ["Back-End"],
     },
     {
       Icon: SiBlender,
       name: "Blender",
-      color: "#F5792A",
+      color: "#FF7300", // Naranja vibrante
       categories: ["Design"],
     },
-    { Icon: SiUnity, name: "Unity", color: "#FFFFFF", categories: ["Design"] },
+    {
+      Icon: SiUnity,
+      name: "Unity",
+      color: "#EEEEEE", // Blanco brillante
+      categories: ["Design"],
+    },
     {
       Icon: SiTableau,
       name: "Tableau",
-      color: "#E97627",
+      color: "#FF8C00", // Naranja fuerte
       categories: ["Data Analysis"],
     },
     {
       Icon: SiGooglecloud,
       name: "Google Cloud",
-      color: "#4285F4",
+      color: "#4C8DFE", // Azul más saturado
       categories: ["Back-End", "Data Analysis"],
     },
   ];
+  
 
   let categories = [];
   skills.forEach((skill) => {
@@ -181,7 +197,7 @@ const HardSkillsSection = () => {
     <section id="skills" className="flex flex-col gap-10">
       <h2 className="uppercase text-white font-bold text-8xl inline-block">
         Technical
-        <span className="text-neutral-700 inline-block">Toolbox</span>
+        <span className="text-neutral-700 block">Toolbox</span>
       </h2>
       <div
         onMouseLeave={() => {

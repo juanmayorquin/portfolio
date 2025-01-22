@@ -3,22 +3,22 @@ import { motion } from "motion/react";
 /* eslint-disable react/prop-types */
 const SkillCard = ({ Icon, name, color }) => {
   return (
-    <motion.div
+    <motion.article
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.1, duration: 0.3 }}
       viewport={{ once: true }}
       animate
-      className="flex h-36 w-36 items-center justify-center gap-6 p-4 hover:bg-white/5 rounded-lg hover:-translate-y-1 hover:cursor-default transition-all group ease-in-out"
+      className="flex w-56 gap-6 p-4 border-2 border-white/5 hover:border-orange-600 rounded-lg hover:cursor-default transition-all group ease-in-out"
       style={{ color }}
     >
-      <div className="z-10 flex flex-col gap-3 justify-center items-center">
-        <Icon size={50} />
-        <p className="text-lg text-center text-neutral-200 group-hover:text-white font-medium transition-all">
+      <div className="z-10 flex w-full gap-5 items-center">
+        <Icon className="min-w-min" size={38} />
+        <p className="text-start text-neutral-200 group-hover:text-white font-medium transition-all">
           {name}
         </p>
       </div>
-    </motion.div>
+    </motion.article>
   );
 };
 

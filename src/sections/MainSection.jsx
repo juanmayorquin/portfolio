@@ -7,18 +7,19 @@ const MainSection = () => {
     <motion.section
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5, delay: 0.3 }}
+      transition={{ duration: 0.5, delay: 0.5 }}
       viewport={{ once: true }}
       className="flex flex-col gap-20"
     >
       <div className="flex flex-col gap-3">
         <h2 className="font-bold text-8xl uppercase">
-          <span className="inline-block text-white">Multimedia</span>
-          <span className="text-neutral-700">Engineer</span>
+          <span className="block text-white">Multimedia</span>
+          <span className="text-neutral-700 block">Engineer</span>
         </h2>
         <p className="text-lg text-neutral-400 w-[28rem]">
-          Passionate about creating intuitive and engaging user experiences.
-          Specialize in transforming ideas into beautifully crafted products.
+          Driven by a love for technology and problem-solving, I specialize in
+          building seamless web solutions and crafting data-driven experiences
+          that make an impact.
         </p>
       </div>
       <div className="flex w-96 justify-between">

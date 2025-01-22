@@ -6,6 +6,8 @@ import RecentProjects from "./sections/RecentProjectsSection";
 import HardSkillsSection from "./sections/HardSkillsSection";
 import ContactForm from "./sections/ContactForm";
 import Footer from "./components/Footer";
+import SoftSkillsSection from "./sections/SoftSkillsSection";
+import AboutMeSection from "./sections/AboutMeSection";
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
               <MainSection />
               <RecentProjects />
               <HardSkillsSection />
+              <SoftSkillsSection />
               <EducationSection />
+              <AboutMeSection />
               <ContactForm />
               <Footer />
             </div>

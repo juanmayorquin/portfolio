@@ -1,4 +1,4 @@
-import { LuHouse, LuFolder, LuBook, LuWrench, LuUser } from "react-icons/lu";
+import { LuHouse, LuFolder, LuBook, LuWrench, LuUser, LuMail } from "react-icons/lu";
 import NavbarItem from "./NavbarItem";
 import { motion } from "motion/react";
 
@@ -17,7 +17,8 @@ const Navbar = () => {
         <NavbarItem Icon={LuFolder} href={"#projects"} label={"Projects"} />
         <NavbarItem Icon={LuWrench} href={"#skills"} label={"Skills"} />
         <NavbarItem Icon={LuBook} href={"#education"} label={"Education"} />
-        <NavbarItem Icon={LuUser} href={"#contact"} label={"Contact"} />
+        <NavbarItem Icon={LuUser} href={"#about-me"} label={"About Me"} />
+        <NavbarItem Icon={LuMail} href={"#contact"} label={"Contact"} />
       </nav>
     </motion.header>
   );

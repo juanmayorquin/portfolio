@@ -14,7 +14,7 @@ const ContactForm = () => {
     <section id="contact" className="flex flex-col gap-10">
       <h2 className="uppercase text-white font-bold text-8xl inline-block">
         Let's work
-        <span className="text-neutral-700 inline-block">Together</span>
+        <span className="text-neutral-700 block">Together</span>
       </h2>
       <motion.form
         initial={{ opacity: 0 }}
