@@ -224,7 +224,7 @@ const HardSkillsSection = () => {
           </button>
         ))}
       </div>
-      <div className="flex flex-wrap gap-5 mt-3">
+      <div className="flex flex-wrap gap-4 mt-3">
         {categoryFilter !== "All"
           ? skills
               .filter((skill) => skill.categories.includes(categoryFilter))
