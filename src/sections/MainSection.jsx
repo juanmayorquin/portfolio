@@ -28,7 +28,7 @@ const MainSection = () => {
       </div>
       <div className="flex gap-8 group">
         {/* Card 1 */}
-        <div className="py-8 px-5 flex flex-col gap-6 w-72 bg-gradient-to-br from-orange-600 to-rose-600 rounded-xl text-white">
+        <div className="py-8 px-5 flex flex-col gap-6 w-72 bg-gradient-to-br from-orange-600 to-red-600 rounded-xl text-white">
           <LuLayers3 size={36} />
           <div className="flex flex-col gap-4">
             <h3 className="uppercase font-semibold text-2xl">
