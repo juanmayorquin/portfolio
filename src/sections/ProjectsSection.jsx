@@ -1,9 +1,9 @@
 import Project from "../components/Project";
 
-const RecentProjectsSection = () => {
+const ProjectsSection = () => {
   const projects = [
     {
-      img: "/src/assets/projectsImg/screenshot.png",
+      img: "/projectsImg/screenshot.png",
       title: "Project Title",
       description: "Short and clear project description",
       deployLink: "#",
@@ -11,7 +11,7 @@ const RecentProjectsSection = () => {
       tags: ["HTML", "CSS", "JavaScript", "React", "MongoDB", "Redux"],
     },
     {
-      img: "/src/assets/projectsImg/screenshot.png",
+      img: "/projectsImg/screenshot.png",
       title: "Another Project Title",
       description: "Another short and clear project description",
       deployLink: "#",
@@ -19,7 +19,7 @@ const RecentProjectsSection = () => {
       tags: ["HTML", "CSS", "TypeScript", "Preact"],
     },
     {
-      img: "/src/assets/projectsImg/screenshot.png",
+      img: "/projectsImg/screenshot.png",
       title: "A Random Project ",
       description: "Another short and clear project description",
       deployLink: "#",
@@ -42,4 +42,4 @@ const RecentProjectsSection = () => {
   );
 };
 
-export default RecentProjectsSection;
+export default ProjectsSection;

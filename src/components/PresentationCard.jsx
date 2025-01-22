@@ -13,7 +13,7 @@ const PresentationCard = () => {
       <div className="bg-gradient-to-tr from-orange-500 to-red-600 rounded-xl p-3 pt-6 pb-0">
         <img
           className="w-full h-full"
-          src="/src/assets/Memoji.webp"
+          src="/Memoji.webp"
           alt="Memoji de Juan Mayorquín"
         />
       </div>

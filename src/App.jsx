@@ -2,7 +2,7 @@ import EducationSection from "./sections/EducationSection";
 import MainSection from "./sections/MainSection";
 import Navbar from "./components/Navbar";
 import PresentationCard from "./components/PresentationCard";
-import RecentProjects from "./sections/RecentProjectsSection";
+import ProjectsSection from "./sections/ProjectsSection";
 import HardSkillsSection from "./sections/HardSkillsSection";
 import ContactForm from "./sections/ContactForm";
 import Footer from "./components/Footer";
@@ -21,7 +21,7 @@ function App() {
             </div>
             <div className="h-full w-2/3 flex flex-col gap-20">
               <MainSection />
-              <RecentProjects />
+              <ProjectsSection />
               <HardSkillsSection />
               <SoftSkillsSection />
               <EducationSection />
