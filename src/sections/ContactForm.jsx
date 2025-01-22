@@ -11,7 +11,7 @@ const ContactForm = () => {
   const [selectedValue, setSelectedValue] = useState("");
 
   return (
-    <Section id={"contact"} title1={"Let's Work"} title2={"Together"}>
+    <Section id={"contact"} title={"Let's Work Together"}>
       <motion.form
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

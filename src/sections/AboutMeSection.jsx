@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import Section from "../components/Section";
 const AboutMeSection = () => {
   return (
-    <Section id={"about-me"} title1={"My Story"} title2={"So Far"}>
+    <Section id={"about-me"} title={"My Story So Far"}>
       <div className="text-neutral-200 text-pretty leading-7 flex flex-col gap-6">
         <motion.p
           initial={{ opacity: 0, x: -20 }}

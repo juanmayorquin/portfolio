@@ -26,7 +26,7 @@ const EducationSection = () => {
     },
   ];
   return (
-    <Section id={"education"} title1={"Learning"} title2={"Path"}>
+    <Section id={"education"} title={"Learning Path"}>
       <Timeline events={courses} />
     </Section>
   );

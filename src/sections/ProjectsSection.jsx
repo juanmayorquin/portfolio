@@ -29,7 +29,7 @@ const ProjectsSection = () => {
     },
   ];
   return (
-    <Section id={"projects"} title1={"Recent"} title2={"Projects"}>
+    <Section id={"projects"} title={"Recent Projects"}>
       <div className="flex flex-col gap-4">
         {projects.map((project, index) => (
           <Project key={index} {...project} />

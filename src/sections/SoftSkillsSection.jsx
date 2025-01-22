@@ -30,7 +30,7 @@ const SoftSkillsSection = () => {
   ];
 
   return (
-    <Section id={"soft-skills"} title1={"Personal"} title2={"Strengths"}>
+    <Section id={"soft-skills"} title={"Personal Strengths"}>
       <div className="flex flex-wrap gap-4">
         {softSkills.map((skill) => (
           <SkillCard {...skill} key={skill.name} />

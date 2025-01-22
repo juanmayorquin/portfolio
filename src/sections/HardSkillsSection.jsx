@@ -194,7 +194,7 @@ const HardSkillsSection = () => {
   const sectionRef = useRef();
 
   return (
-    <Section id={"skills"} title1={"Technical"} title2={"Toolbox"}>
+    <Section id={"skills"} title1={"Technical Toolbox"}>
       <div
         onMouseLeave={() => {
           setBackDropStyle((prevStyle) => ({ ...prevStyle, opacity: 0 }));
