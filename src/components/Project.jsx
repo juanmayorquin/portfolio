@@ -7,9 +7,9 @@ import Tag from "./Tag";
 const Project = ({ img, title, description, gitHubLink, deployLink, tags }) => {
   return (
     <motion.article
-      initial={{ opacity: 0}}
+      initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{delay:0.1, duration:0.3,}}
+      transition={{ delay: 0.1, duration: 0.3 }}
       viewport={{ once: true }}
       animate
       className="flex items-center border-l-4 border-transparent hover:border-orange-600 justify-between rounded-l rounded-r-xl px-8 p-4 gap-5 hover:bg-white/5 hover:translate-x-2 transition-all"
