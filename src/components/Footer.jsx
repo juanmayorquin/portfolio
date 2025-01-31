@@ -1,7 +1,9 @@
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div className="w-full flex items-center justify-center pt-16 py-10">
+      <p className="text-neutral-400">Made with ♡ by Juan Mayorquín.</p>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

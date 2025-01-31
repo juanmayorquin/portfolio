@@ -27,10 +27,10 @@ function App() {
               <EducationSection />
               <AboutMeSection />
               <ContactForm />
-              <Footer />
             </main>
           </div>
         </div>
+              <Footer />
       </div>
     </>
   );
