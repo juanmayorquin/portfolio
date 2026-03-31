@@ -28,8 +28,8 @@ const Navbar = () => {
       animate
       className="p-6 grid place-items-center text-white"
     >
-      <nav className="flex items-center justify-between gap-1 w-full lg:place-self-end xl:place-self-auto md:w-auto px-4 py-3 bg-white/[0.03] rounded-xl">
-        <div className="flex items-center gap-1">
+      <nav className="flex items-center justify-between gap-6 w-full lg:place-self-end xl:place-self-auto md:w-auto px-4 py-3 bg-white/[0.03] rounded-xl">
+        <div className="flex items-center gap-6">
           <NavbarItem Icon={LuHouse} href={"/"} label={t("navbar.home")} />
           <NavbarItem Icon={LuBriefcase} href={"#experience"} label={t("navbar.experience")} />
           <NavbarItem Icon={LuFolder} href={"#projects"} label={t("navbar.projects")} />
