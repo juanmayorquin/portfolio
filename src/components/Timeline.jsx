@@ -20,6 +20,7 @@ const Timeline = ({ events }) => {
             skills={course.skills}
             initYear={course.initDate}
             finishYear={course.finishDate}
+            gpa={course.gpa}
           />
         ))}
     </div>

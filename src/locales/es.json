@@ -1,0 +1,157 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "education": "Formación",
+    "aboutMe": "Sobre Mí",
+    "contact": "Contacto",
+    "langToggle": "EN"
+  },
+  "presentationCard": {
+    "tagline": "Desarrollador Full-Stack e Ingeniero de Automatización, construyendo soluciones empresariales y plataformas basadas en datos.",
+    "downloadCV": "Descargar CV"
+  },
+  "sections": {
+    "main": {
+      "line1": "Desarrollador",
+      "line2": "Full-Stack",
+      "tagline": "Me especializo en construir soluciones de automatización de extremo a extremo, plataformas web internas y dashboards de BI que generan impacto medible en entornos empresariales.",
+      "card1Title": "Desarrollo Web y Automatización de Procesos",
+      "card2Title": "React · Node.js · NestJS · Power Platform · Python",
+      "statsYears": "Años de Experiencia",
+      "statsProjects": "Proyectos Completados"
+    },
+    "experience": {
+      "sectionTitle": "Experiencia Laboral",
+      "jobs": {
+        "workforce": {
+          "title": "Analista de Workforce – Automatización y Análisis de Datos",
+          "company": "Alorica Colombia",
+          "bullets": [
+            "Desarrollé una plataforma de asistencia e incidentes en PowerApps para más de 100 agentes, reduciendo el tiempo de reporte en un ~60%",
+            "Diseñé flujos de trabajo multi-etapa en Power Automate para notificaciones automáticas de incidentes y escalamiento a Team Leaders",
+            "Creé KPIs para medir la eficiencia de los Team Leaders en resolución de incidentes, adoptados por la gestión de Workforce",
+            "Construí dashboards en Power BI con reportes semanales de salud del equipo para stakeholders de nivel directivo"
+          ]
+        },
+        "collections": {
+          "title": "Agente de Cobros / Experto en la Materia (SME)",
+          "company": "Alorica Colombia",
+          "bullets": [
+            "Rastreé y analicé indicadores de rendimiento del equipo; desarrollé herramientas de reporte visual que apoyaron decisiones basadas en datos",
+            "Ascendido a SME por desempeño sobresaliente; lideré sesiones de onboarding y capacitación de agentes",
+            "Operé en un entorno completamente bilingüe (español/inglés) atendiendo clientes internacionales"
+          ]
+        },
+        "kcDev": {
+          "title": "Desarrollador de Software",
+          "company": "KCDreams",
+          "bullets": [
+            "Diseñé e implementé soluciones de automatización que optimizaron los flujos de procesamiento de pedidos",
+            "Desarrollé y desplegué herramientas internas escalables en colaboración con equipos multifuncionales"
+          ]
+        },
+        "kcSales": {
+          "title": "Asesor Comercial",
+          "company": "KCDreams",
+          "bullets": [
+            "Gestioné soporte al cliente omnicanal y asesoría de pedidos; manejé resolución de PQRS",
+            "Documenté problemas recurrentes y propuse mejoras de proceso para reducir consultas repetitivas"
+          ]
+        }
+      }
+    },
+    "projects": {
+      "sectionTitle": "Proyectos Recientes",
+      "workforce": {
+        "title": "Plataforma de Asistencia e Incidentes de Workforce",
+        "description": "Plataforma empresarial en PowerApps para seguimiento en tiempo real de asistencia de agentes y gestión del ciclo de vida de incidentes. Integrada con Power Automate para notificaciones automatizadas y Power BI para reportes KPI ejecutivos."
+      },
+      "orderManagement": {
+        "title": "Sistema de Gestión de Pedidos (SPA)",
+        "description": "Aplicación de una sola página full-stack para la gestión completa del ciclo de vida de pedidos de una línea de ropa personalizada. Redujo los tiempos del ciclo de producción mediante automatización de flujos de trabajo."
+      },
+      "realEstate": {
+        "title": "Plataforma de Arrendamiento Inmobiliario",
+        "description": "Plataforma full-stack de listado de propiedades y contacto construida como Scrum Master. Incluye una aplicación móvil Flutter para la exploración de propiedades."
+      },
+      "vroom": {
+        "title": "Vroom Co. E-Commerce",
+        "description": "Tienda en línea para una marca de ropa con inventario en tiempo real y autenticación basada en Firebase."
+      }
+    },
+    "skills": {
+      "sectionTitle": "Caja de Herramientas",
+      "categories": {
+        "all": "Todas",
+        "frontEnd": "Front-End",
+        "backEnd": "Back-End",
+        "dataAnalysis": "Análisis de Datos",
+        "design": "Diseño",
+        "automation": "Automatización"
+      }
+    },
+    "softSkills": {
+      "sectionTitle": "Habilidades Personales",
+      "teamCollaboration": "Trabajo en Equipo",
+      "problemSolving": "Resolución de Problemas",
+      "effectiveCommunication": "Comunicación Efectiva",
+      "continuousLearning": "Aprendizaje Continuo",
+      "timeManagement": "Gestión del Tiempo",
+      "criticalThinking": "Pensamiento Crítico",
+      "attentionToDetail": "Atención al Detalle",
+      "adaptability": "Adaptabilidad",
+      "customerFocus": "Enfoque al Cliente"
+    },
+    "education": {
+      "sectionTitle": "Formación Académica",
+      "items": {
+        "bigData": {
+          "title": "Especialista en Análisis de Big Data",
+          "school": "Universidad Autónoma de Occidente"
+        },
+        "engineering": {
+          "title": "Ingeniería Multimedia",
+          "school": "Universidad Autónoma de Occidente"
+        },
+        "fullStackOpen": {
+          "title": "Full Stack Open",
+          "school": "Universidad de Helsinki"
+        },
+        "googleData": {
+          "title": "Certificado Profesional de Análisis de Datos de Google",
+          "school": "Google / Coursera"
+        }
+      }
+    },
+    "aboutMe": {
+      "sectionTitle": "Mi Historia",
+      "p1": "¡Hola! Mi nombre es Juan Mayorquín, pero mis amigos me llaman \"Mayo\". Desde los 5 años, cuando tuve mi primera computadora, los videojuegos fueron mi primera pasión. Pero pronto encontré el mundo de la programación — comenzando con Scratch, luego Java, hasta encontrar mi vocación en el desarrollo web y el análisis de datos.",
+      "p2": "Mi trayectoria profesional me ha llevado desde construir un sistema de gestión de pedidos para un negocio familiar hasta diseñar plataformas de automatización empresarial en Alorica, donde reduje el tiempo de reporte en un 60% y construí dashboards de Power BI consultados semanalmente por la dirección del equipo. Me apasiona el aprendizaje continuo y actualmente curso una especialización en Análisis de Big Data.",
+      "p3": "Creo que las habilidades adquiridas en un área siempre enriquecen otra. Fuera del código, disfruto la lectura, la fotografía y soy fanático de la Fórmula 1 — Lando Norris es mi piloto. Mi filosofía: las cosas bien hechas se ven bien."
+    },
+    "contact": {
+      "sectionTitle": "Hablemos",
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "tu@correo.com",
+      "budgetLabel": "Presupuesto",
+      "budgetPlaceholder": "Selecciona una opción",
+      "budgetOptions": {
+        "under3k": "< $3k",
+        "from3kTo5k": "$3k – $5k",
+        "from5kTo10k": "$5k – $10k",
+        "over10k": "> $10k"
+      },
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "submit": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "text": "Hecho con ♡ por Juan Mayorquín."
+  }
+}

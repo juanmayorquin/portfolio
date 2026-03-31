@@ -1,8 +1,11 @@
 import Stat from "../components/Stat";
 import { LuLayers3, LuCodeXml, LuArrowRight } from "react-icons/lu";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 const MainSection = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       initial={{ opacity: 0, x: -20 }}
@@ -13,18 +16,16 @@ const MainSection = () => {
     >
       <div className="w-full flex flex-col gap-3">
         <h2 className="font-bold text-[2.75rem] leading-[3rem] md:text-7xl xl:text-8xl uppercase">
-          <span className="block text-white">Multimedia</span>
-          <span className="text-neutral-700 block">Engineer</span>
+          <span className="block text-white">{t("sections.main.line1")}</span>
+          <span className="text-neutral-700 block">{t("sections.main.line2")}</span>
         </h2>
         <p className="lg:text-lg text-neutral-400 w-full">
-          Driven by a love for technology and problem-solving, I specialize in
-          building seamless web solutions and crafting data-driven experiences
-          that make an impact.
+          {t("sections.main.tagline")}
         </p>
       </div>
       <div className="flex w-full md:w-96 gap-12 md:justify-between">
-        <Stat number={2} label={"Years of Experience"} />
-        <Stat number={20} label={"Projects Completed"} />
+        <Stat number={2} label={t("sections.main.statsYears")} />
+        <Stat number={20} label={t("sections.main.statsProjects")} />
       </div>
       <div className="flex flex-col md:flex-row gap-8 group">
         {/* Card 1 */}
@@ -32,12 +33,10 @@ const MainSection = () => {
           <LuLayers3 size={36} />
           <div className="flex flex-col gap-4">
             <h4 className="uppercase font-semibold text-2xl">
-              Web Development & Data Analysis
+              {t("sections.main.card1Title")}
             </h4>
-            <div
-              className={`w-min border rounded-lg p-1 self-end hover:bg-white hover:text-rose-600 transition-all hover:cursor-pointer`}
-            >
-              <a href={"#projects"}>
+            <div className="w-min border rounded-lg p-1 self-end hover:bg-white hover:text-rose-600 transition-all hover:cursor-pointer">
+              <a href="#experience">
                 <LuArrowRight size={24} />
               </a>
             </div>
@@ -45,16 +44,14 @@ const MainSection = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="py-8 px-5 flex flex-col gap-6 w-full xl:w-96 bg-gradient-to-br from-lime-500 to-teal-500  rounded-xl text-neutral-900">
+        <div className="py-8 px-5 flex flex-col gap-6 w-full xl:w-96 bg-gradient-to-br from-lime-500 to-teal-500 rounded-xl text-neutral-900">
           <LuCodeXml size={36} />
           <div className="flex flex-col gap-4">
-            <h4 className="uppercase font-semibold text-2xl">
-              JavaScript, React, Node.js, Python, Cloud
+            <h4 className="uppercase font-semibold text-xl">
+              {t("sections.main.card2Title")}
             </h4>
-            <div
-              className={`w-min border border-neutral-900 rounded-lg p-1 self-end hover:bg-neutral-900 hover:text-teal-500 transition-all hover:cursor-pointer`}
-            >
-              <a href={"#skills"}>
+            <div className="w-min border border-neutral-900 rounded-lg p-1 self-end hover:bg-neutral-900 hover:text-teal-500 transition-all hover:cursor-pointer">
+              <a href="#skills">
                 <LuArrowRight size={24} />
               </a>
             </div>

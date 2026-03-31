@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { LuGithub, LuGlobe } from "react-icons/lu";
+import { LuGithub, LuGlobe, LuLock } from "react-icons/lu";
 import Anchor from "./Anchor";
 import { motion } from "motion/react";
 import Tag from "./Tag";
@@ -15,13 +15,19 @@ const Project = ({ img, title, description, gitHubLink, deployLink, tags }) => {
       className="flex flex-col xl:flex-row items-center border-l-4 border-transparent hover:border-orange-600 justify-between rounded-l rounded-r-xl px-8 p-4 gap-5 hover:bg-white/5 hover:translate-x-2 transition-all"
     >
       <div className="flex flex-col xl:flex-row gap-10 xl:items-center">
-        <img
-          className="object-cover rounded-md aspect-video xl:aspect-square xl:w-32 w-full min-h-32"
-          height={100}
-          width={100}
-          src={img}
-          alt={title}
-        />
+        {img ? (
+          <img
+            className="object-cover rounded-md aspect-video xl:aspect-square xl:w-32 w-full min-h-32"
+            height={100}
+            width={100}
+            src={img}
+            alt={title}
+          />
+        ) : (
+          <div className="flex items-center justify-center rounded-md aspect-video xl:aspect-square xl:w-32 w-full min-h-32 bg-gradient-to-br from-orange-600/20 to-red-600/20 border border-orange-600/20">
+            <LuLock size={32} className="text-orange-600/50" />
+          </div>
+        )}
         <div className="flex flex-col gap-4">
           <div>
             <h3 className="text-white font-semibold text-3xl">{title}</h3>
@@ -33,16 +39,8 @@ const Project = ({ img, title, description, gitHubLink, deployLink, tags }) => {
         </div>
       </div>
       <div className="flex w-full xl:w-auto gap-4">
-        {deployLink !== undefined && deployLink !== "" ? (
-          <Anchor Icon={LuGlobe} href={deployLink} />
-        ) : (
-          ""
-        )}
-        {gitHubLink !== undefined && gitHubLink !== "" ? (
-          <Anchor Icon={LuGithub} href={gitHubLink} />
-        ) : (
-          ""
-        )}
+        {deployLink ? <Anchor Icon={LuGlobe} href={deployLink} /> : null}
+        {gitHubLink ? <Anchor Icon={LuGithub} href={gitHubLink} /> : null}
       </div>
     </motion.article>
   );

@@ -11,29 +11,28 @@ import {
 } from "react-icons/lu";
 import SkillCard from "../components/SkillCard";
 import Section from "../components/Section";
+import { useTranslation } from "react-i18next";
 
 const SoftSkillsSection = () => {
+  const { t } = useTranslation();
+
   const softSkills = [
-    { name: "Team Collaboration", Icon: LuUsers, color: "#00FF00" }, // Verde neón
-    { name: "Problem Solving", Icon: LuBrain, color: "#FF4500" }, // Naranja rojizo brillante
-    {
-      name: "Effective Communication",
-      Icon: LuMessageCircle,
-      color: "#00BFFF",
-    }, // Azul neón
-    { name: "Continuous Learning", Icon: LuBookOpen, color: "#9400D3" }, // Violeta brillante
-    { name: "Time Management", Icon: LuClock, color: "#FFD700" }, // Amarillo vivo
-    { name: "Critical Thinking", Icon: LuLightbulb, color: "#FF6347" }, // Rojo tomate
-    { name: "Attention to Detail", Icon: LuZoomIn, color: "#00FFFF" }, // Cian neón
-    { name: "Adaptability", Icon: LuShuffle, color: "#FF00FF" }, // Fucsia
-    { name: "Customer Focus", Icon: LuSmile, color: "#1E90FF" }, // Azul real saturado
+    { nameKey: "sections.softSkills.teamCollaboration", Icon: LuUsers, color: "#00FF00" },
+    { nameKey: "sections.softSkills.problemSolving", Icon: LuBrain, color: "#FF4500" },
+    { nameKey: "sections.softSkills.effectiveCommunication", Icon: LuMessageCircle, color: "#00BFFF" },
+    { nameKey: "sections.softSkills.continuousLearning", Icon: LuBookOpen, color: "#9400D3" },
+    { nameKey: "sections.softSkills.timeManagement", Icon: LuClock, color: "#FFD700" },
+    { nameKey: "sections.softSkills.criticalThinking", Icon: LuLightbulb, color: "#FF6347" },
+    { nameKey: "sections.softSkills.attentionToDetail", Icon: LuZoomIn, color: "#00FFFF" },
+    { nameKey: "sections.softSkills.adaptability", Icon: LuShuffle, color: "#FF00FF" },
+    { nameKey: "sections.softSkills.customerFocus", Icon: LuSmile, color: "#1E90FF" },
   ];
 
   return (
-    <Section id={"soft-skills"} title={"Personal Strengths"}>
+    <Section id="soft-skills" title={t("sections.softSkills.sectionTitle")}>
       <div className="flex flex-wrap justify-center items-center lg:justify-normal lg:items-start gap-4 mt-3">
         {softSkills.map((skill) => (
-          <SkillCard {...skill} key={skill.name} />
+          <SkillCard {...skill} name={t(skill.nameKey)} key={skill.nameKey} />
         ))}
       </div>
     </Section>

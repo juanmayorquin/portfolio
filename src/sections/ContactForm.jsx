@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import Section from "../components/Section";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   const labelStyle =
     "text-neutral-300 group-hover:text-white group-hover:font-medium transition-all w-full text-sm";
   const inputStyle =
@@ -11,7 +14,7 @@ const ContactForm = () => {
   const [selectedValue, setSelectedValue] = useState("");
 
   return (
-    <Section id={"contact"} title={"Let's Work Together"}>
+    <Section id="contact" title={t("sections.contact.sectionTitle")}>
       <motion.form
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -23,63 +26,62 @@ const ContactForm = () => {
       >
         <div className="flex flex-col gap-4 group">
           <label className={labelStyle} htmlFor="contact-name">
-            Name
+            {t("sections.contact.nameLabel")}
           </label>
           <input
             className={inputStyle}
-            placeholder="Your name"
+            placeholder={t("sections.contact.namePlaceholder")}
             id="contact-name"
             type="text"
           />
         </div>
         <div className="flex flex-col gap-4 group">
           <label className={labelStyle} htmlFor="contact-email">
-            Email
+            {t("sections.contact.emailLabel")}
           </label>
           <input
             className={inputStyle}
-            placeholder="Your@email.com"
+            placeholder={t("sections.contact.emailPlaceholder")}
             id="contact-email"
-            type="text"
+            type="email"
           />
         </div>
         <div className="flex flex-col gap-4 col-span-2 group">
           <label className={labelStyle} htmlFor="contact-budget">
-            Budget
+            {t("sections.contact.budgetLabel")}
           </label>
           <select
             className={`${inputStyle} ${
               selectedValue ? "text-white" : "text-neutral-400"
             }`}
-            placeholder="Your budget"
             id="contact-budget"
-            defaultValue={""}
+            defaultValue=""
             onChange={(e) => setSelectedValue(e.target.value)}
           >
-            <option disabled value={""}>
-              Select an option
+            <option disabled value="">
+              {t("sections.contact.budgetPlaceholder")}
             </option>
-            <option className="text-white" value="3k">
-              {"<"}3k
+            <option className="text-white" value="under3k">
+              {t("sections.contact.budgetOptions.under3k")}
             </option>
-            <option className="text-white" value="3k-5k">
-              3k-5k
+            <option className="text-white" value="3kTo5k">
+              {t("sections.contact.budgetOptions.from3kTo5k")}
             </option>
-            <option className="text-white" value="5k-10k">
-              5k-10k
+            <option className="text-white" value="5kTo10k">
+              {t("sections.contact.budgetOptions.from5kTo10k")}
             </option>
-            <option className="text-white" value="3k">
-              {">"}10k
+            <option className="text-white" value="over10k">
+              {t("sections.contact.budgetOptions.over10k")}
             </option>
           </select>
         </div>
         <div className="flex flex-col gap-4 col-span-2 group">
           <label className={labelStyle} htmlFor="contact-message">
-            Message
+            {t("sections.contact.messageLabel")}
           </label>
           <textarea
             className={`${inputStyle} h-52`}
-            placeholder="Your message"
+            placeholder={t("sections.contact.messagePlaceholder")}
             name="message"
             id="contact-message"
           ></textarea>
@@ -88,7 +90,7 @@ const ContactForm = () => {
           className="w-full mt-4 col-span-2 bg-orange-600 p-3 rounded-xl font-semibold flex items-center justify-center text-lg hover:text-neutral-800 transition-all"
           type="submit"
         >
-          Submit
+          {t("sections.contact.submit")}
         </button>
       </motion.form>
     </Section>

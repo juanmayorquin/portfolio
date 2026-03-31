@@ -8,6 +8,7 @@ import ContactForm from "./sections/ContactForm";
 import Footer from "./components/Footer";
 import SoftSkillsSection from "./sections/SoftSkillsSection";
 import AboutMeSection from "./sections/AboutMeSection";
+import ExperienceSection from "./sections/ExperienceSection";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             </aside>
             <main className="h-full lg:w-2/3 flex flex-col gap-20">
               <MainSection />
+              <ExperienceSection />
               <ProjectsSection />
               <HardSkillsSection />
               <SoftSkillsSection />

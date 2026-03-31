@@ -1,32 +1,22 @@
+import { useTranslation } from "react-i18next";
 import Section from "../components/Section";
 import Timeline from "../components/Timeline";
+import { education } from "../data/education";
 
 const EducationSection = () => {
-  const courses = [
-    {
-      title: "Ingeniería Multimedia",
-      school: "Universidad Autónoma de Occidente",
-      skills: ["HTML", "CSS", "JavaScript", "MySQL"],
-      initDate: "Jul, 2021",
-      finishDate: "May,2026",
-    },
-    {
-      title: "Full Stack Open",
-      school: "Helsinki University",
-      skills: ["React", "MongoDB", "TypeScript"],
-      initDate: "Jul, 2024",
-      finishDate: "Dec, 2024",
-    },
-    {
-      title: "Certificado profesional de Análisis de datos de Google",
-      school: "Google Career Certificates",
-      skills: ["PostgreSQL", "Tableau", "Data Analysis"],
-      initDate: "Jan, 2025",
-      finishDate: "Jul, 2025",
-    },
-  ];
+  const { t } = useTranslation();
+
+  const courses = education.map((item) => ({
+    title: t(item.titleKey),
+    school: t(item.schoolKey),
+    skills: item.skills,
+    initDate: item.initDate,
+    finishDate: item.finishDate,
+    gpa: item.gpa,
+  }));
+
   return (
-    <Section id={"education"} title={"Learning Path"}>
+    <Section id="education" title={t("sections.education.sectionTitle")}>
       <Timeline events={courses} />
     </Section>
   );

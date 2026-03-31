@@ -1,174 +1,20 @@
-import {
-  SiPython,
-  SiUnity,
-  SiMysql,
-  SiPostgresql,
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiTailwindcss,
-  SiGit,
-  SiNodedotjs,
-  SiExpress,
-  SiFirebase,
-  SiMongodb,
-  SiFigma,
-  SiBlender,
-  SiAdobephotoshop,
-  SiAdobeillustrator,
-  SiAdobepremierepro,
-  SiTableau,
-  SiGooglecloud,
-  SiAdobeaftereffects,
-} from "react-icons/si";
-
 import SkillCard from "../components/SkillCard";
 import { useRef, useState } from "react";
 import Section from "../components/Section";
+import { skills } from "../data/skills";
+import { useTranslation } from "react-i18next";
 
 const HardSkillsSection = () => {
-  const skills = [
-    {
-      Icon: SiHtml5,
-      name: "HTML5",
-      color: "#FF5722", // Más vibrante
-      categories: ["Front-End"],
-    },
-    {
-      Icon: SiCss3,
-      name: "CSS3",
-      color: "#2196F3", // Más brillante
-      categories: ["Front-End"],
-    },
-    {
-      Icon: SiGit,
-      name: "Git",
-      color: "#FF4C2E", // Naranja más intenso
-      categories: ["Back-End", "Front-End"],
-    },
-    {
-      Icon: SiJavascript,
-      name: "JavaScript",
-      color: "#FFD600", // Amarillo vibrante
-      categories: ["Front-End"],
-    },
-    {
-      Icon: SiFigma,
-      name: "Figma",
-      color: "#B620FF", // Morado más saturado
-      categories: ["Design"],
-    },
-    {
-      Icon: SiAdobephotoshop,
-      name: "Photoshop",
-      color: "#1E90FF", // Azul real más vibrante
-      categories: ["Design"],
-    },
-    {
-      Icon: SiAdobeillustrator,
-      name: "Illustrator",
-      color: "#FF6F00", // Naranja saturado
-      categories: ["Design"],
-    },
-    {
-      Icon: SiAdobepremierepro,
-      name: "Premiere",
-      color: "#735DFF", // Azul violáceo saturado
-      categories: ["Design"],
-    },
-    {
-      Icon: SiAdobeaftereffects,
-      name: "After Effects",
-      color: "#AB47FF", // Morado vibrante
-      categories: ["Design"],
-    },
-    {
-      Icon: SiTailwindcss,
-      name: "TailwindCSS",
-      color: "#00E5FF", // Cian brillante
-      categories: ["Front-End"],
-    },
-    {
-      Icon: SiTypescript,
-      name: "TypeScript",
-      color: "#005FCC", // Azul oscuro saturado
-      categories: ["Front-End"],
-    },
-    {
-      Icon: SiPython,
-      name: "Python",
-      color: "#4586D6", // Azul más vivo
-      categories: ["Back-End", "Data Analysis"],
-    },
-    {
-      Icon: SiReact,
-      name: "React",
-      color: "#33DDFF", // Cian brillante
-      categories: ["Front-End"],
-    },
-    {
-      Icon: SiFirebase,
-      name: "Firebase",
-      color: "#FFB300", // Amarillo neón
-      categories: ["Back-End"],
-    },
-    {
-      Icon: SiMysql,
-      name: "MySQL",
-      color: "#0069C0", // Azul fuerte
-      categories: ["Back-End"],
-    },
-    {
-      Icon: SiPostgresql,
-      name: "PostgreSQL",
-      color: "#004495", // Azul oscuro más vibrante
-      categories: ["Back-End"],
-    },
-    {
-      Icon: SiNodedotjs,
-      name: "Node.js",
-      color: "#3DCC3D", // Verde saturado
-      categories: ["Back-End"],
-    },
-    {
-      Icon: SiExpress,
-      name: "Express.js",
-      color: "#E0E0E0", // Gris claro brillante
-      categories: ["Back-End"],
-    },
-    {
-      Icon: SiMongodb,
-      name: "MongoDB",
-      color: "#4CAF50", // Verde más intenso
-      categories: ["Back-End"],
-    },
-    {
-      Icon: SiBlender,
-      name: "Blender",
-      color: "#FF7300", // Naranja vibrante
-      categories: ["Design"],
-    },
-    {
-      Icon: SiUnity,
-      name: "Unity",
-      color: "#EEEEEE", // Blanco brillante
-      categories: ["Design"],
-    },
-    {
-      Icon: SiTableau,
-      name: "Tableau",
-      color: "#FF8C00", // Naranja fuerte
-      categories: ["Data Analysis"],
-    },
-    {
-      Icon: SiGooglecloud,
-      name: "Google Cloud",
-      color: "#4C8DFE", // Azul más saturado
-      categories: ["Back-End", "Data Analysis"],
-    },
-  ];
+  const { t } = useTranslation();
+
+  const categoryKeyMap = {
+    All: "sections.skills.categories.all",
+    "Front-End": "sections.skills.categories.frontEnd",
+    "Back-End": "sections.skills.categories.backEnd",
+    "Data Analysis": "sections.skills.categories.dataAnalysis",
+    Design: "sections.skills.categories.design",
+    Automation: "sections.skills.categories.automation",
+  };
 
   let categories = [];
   skills.forEach((skill) => {
@@ -194,7 +40,7 @@ const HardSkillsSection = () => {
   const sectionRef = useRef();
 
   return (
-    <Section id={"skills"} title={"Technical Toolbox"}>
+    <Section id="skills" title={t("sections.skills.sectionTitle")}>
       <div
         onMouseLeave={() => {
           setBackDropStyle((prevStyle) => ({ ...prevStyle, opacity: 0 }));
@@ -216,7 +62,7 @@ const HardSkillsSection = () => {
             onMouseEnter={handleHover}
             aria-pressed={categoryFilter === category}
           >
-            {category}
+            {t(categoryKeyMap[category] ?? category)}
           </button>
         ))}
       </div>

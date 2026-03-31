@@ -1,0 +1,171 @@
+{
+  "navbar": {
+    "home": "Home",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "aboutMe": "About Me",
+    "contact": "Contact",
+    "langToggle": "ES"
+  },
+  "presentationCard": {
+    "tagline": "Full-Stack Developer & Process Automation Engineer, crafting enterprise solutions and data-driven platforms.",
+    "downloadCV": "Download CV"
+  },
+  "sections": {
+    "main": {
+      "line1": "Full-Stack",
+      "line2": "Developer",
+      "tagline": "I specialize in building end-to-end automation solutions, internal web platforms, and BI dashboards that create measurable impact in enterprise environments.",
+      "card1Title": "Web Dev & Process Automation",
+      "card2Title": "React · Node.js · NestJS · Power Platform · Python",
+      "statsYears": "Years of Experience",
+      "statsProjects": "Projects Completed"
+    },
+    "experience": {
+      "sectionTitle": "Work Experience",
+      "jobs": {
+        "workforce": {
+          "title": "Workforce Analyst – Process Automation & Data Analytics",
+          "company": "Alorica Colombia",
+          "bullets": [
+            "Built a PowerApps attendance & incident management platform for 100+ agents, reducing reporting time by ~60%",
+            "Engineered multi-step Power Automate workflows for automated incident notification and TL escalation",
+            "Designed KPIs for Team Leader efficiency in incident resolution adopted by Workforce management",
+            "Built Power BI dashboards delivering weekly team health reports to senior stakeholders"
+          ]
+        },
+        "collections": {
+          "title": "Collections Agent / Subject Matter Expert (SME)",
+          "company": "Alorica Colombia",
+          "bullets": [
+            "Tracked and analyzed team performance indicators; built visual reporting tools supporting data-driven decisions",
+            "Promoted to SME for outstanding performance; led agent onboarding and training sessions",
+            "Operated in a fully bilingual (Spanish/English) environment serving international clients"
+          ]
+        },
+        "kcDev": {
+          "title": "Software Developer",
+          "company": "KCDreams",
+          "bullets": [
+            "Designed and implemented automation solutions that optimized order-processing workflows",
+            "Developed and deployed scalable internal tools in collaboration with cross-functional stakeholders"
+          ]
+        },
+        "kcSales": {
+          "title": "Sales Advisor",
+          "company": "KCDreams",
+          "bullets": [
+            "Managed omnichannel customer support and order advisory; handled PQRS resolution",
+            "Documented recurring issues and proposed process improvements to reduce repeat inquiries"
+          ]
+        }
+      }
+    },
+    "projects": {
+      "sectionTitle": "Recent Projects",
+      "workforce": {
+        "title": "Workforce Attendance & Incident Management Platform",
+        "description": "Enterprise PowerApps platform for real-time agent attendance tracking and incident lifecycle management. Integrated Power Automate for automated notifications and Power BI for executive-level KPI reporting."
+      },
+      "orderManagement": {
+        "title": "Order Management System (SPA)",
+        "description": "Full-stack Single Page Application for end-to-end order lifecycle management of a custom swimwear product line. Reduced production cycle times through embedded workflow automation."
+      },
+      "realEstate": {
+        "title": "Real Estate Rental Platform",
+        "description": "Full-stack property listing and contact platform built as Scrum Master. Includes a Flutter mobile companion app for property browsing on the go."
+      },
+      "vroom": {
+        "title": "Vroom Co. E-Commerce",
+        "description": "E-commerce storefront for a clothing brand with real-time inventory and authentication powered by Firebase."
+      }
+    },
+    "skills": {
+      "sectionTitle": "Technical Toolbox",
+      "categories": {
+        "all": "All",
+        "frontEnd": "Front-End",
+        "backEnd": "Back-End",
+        "dataAnalysis": "Data Analysis",
+        "design": "Design",
+        "automation": "Automation"
+      }
+    },
+    "softSkills": {
+      "sectionTitle": "Personal Strengths",
+      "teamCollaboration": "Team Collaboration",
+      "problemSolving": "Problem Solving",
+      "effectiveCommunication": "Effective Communication",
+      "continuousLearning": "Continuous Learning",
+      "timeManagement": "Time Management",
+      "criticalThinking": "Critical Thinking",
+      "attentionToDetail": "Attention to Detail",
+      "adaptability": "Adaptability",
+      "customerFocus": "Customer Focus"
+    },
+    "education": {
+      "sectionTitle": "Learning Path",
+      "items": {
+        "bigData": {
+          "title": "Big Data Analysis Specialist",
+          "school": "Universidad Autónoma de Occidente"
+        },
+        "engineering": {
+          "title": "B.Eng. Multimedia Engineering",
+          "school": "Universidad Autónoma de Occidente"
+        },
+        "fullStackOpen": {
+          "title": "Full Stack Open",
+          "school": "University of Helsinki"
+        },
+        "googleData": {
+          "title": "Google Data Analytics Professional Certificate",
+          "school": "Google / Coursera"
+        }
+      }
+    },
+    "aboutMe": {
+      "sectionTitle": "My Story So Far",
+      "p1": "Hello! My name is Juan Mayorquín, but my friends call me \"Mayo\"! Since I was 5 years old, when I got my first computer, video games were my first passion. But soon, I found myself exploring the world of programming — starting with Scratch, then Java, and eventually finding my calling in web development and data analysis.",
+      "p2": "My professional journey has taken me from building a custom order management system for a family business to engineering enterprise-grade automation platforms at Alorica, where I reduced reporting time by 60% and built Power BI dashboards consumed by team leadership every week. I'm passionate about continuous learning and currently pursuing a Big Data Analysis specialization.",
+      "p3": "I believe that skills acquired in one area always enrich another. Outside of coding, I enjoy reading, photography, and I'm a big Formula 1 fan — Lando Norris is my guy. My philosophy: things well done look good.",
+      "accentWords": {
+        "mayo": "Mayo",
+        "videoGames": "video games",
+        "programming": "programming",
+        "webDev": "web development",
+        "dataAnalysis": "data analysis",
+        "orderManagement": "order management system",
+        "automation": "enterprise-grade automation platforms",
+        "continuousLearning": "continuous learning",
+        "bigData": "Big Data Analysis",
+        "reading": "reading",
+        "photography": "photography",
+        "f1": "Formula 1"
+      }
+    },
+    "contact": {
+      "sectionTitle": "Let's Work Together",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "budgetLabel": "Budget",
+      "budgetPlaceholder": "Select an option",
+      "budgetOptions": {
+        "under3k": "< $3k",
+        "from3kTo5k": "$3k – $5k",
+        "from5kTo10k": "$5k – $10k",
+        "over10k": "> $10k"
+      },
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "text": "Made with ♡ by Juan Mayorquín."
+  }
+}
